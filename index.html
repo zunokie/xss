@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>XSS Challenge</title>
+  <meta charset="UTF-8">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Zunokie">
+  <meta name="twitter:creator" content="@Zunokie">
+  <meta name="twitter:title" content="XSS Challenge - Zunokie">
+  <meta name="twitter:description" content="Find the XSS">
+  <meta name="twitter:image" content="https://i.imgur.com/FnPTriy.png">
+  <meta property="og:url" content="https://zunokie.blogspot.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="XSS Challenge - Zunokie" />
+  <meta property="og:description" content="Find the XSS" />
+  <meta property="og:image" content="https://i.imgur.com/FnPTriy.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+  <section id="wrapper">
+  <header>
+    <img src="./logo.png">
+    <h1><a href="https://zunokie.blogspot.com">Zunokie</a>'s XSS Challenge</h1>
+  </header>
+  <section id="rules">
+    <div id="challenge-container">
+  <div id="challenge-info">
+    <p>Find a way to execute arbitrary javascript on this page.</p>
+    <b>The solution...</b>
+    <ul>
+      <li>Should work on the latest version of Firefox or Chrome</li>
+      <li>Should execute the following JS: <code>alert(<strong>document.domain</strong>)</code>.</li>
+    </ul>
+  </div>
+</section>
+<section id="challenge">
+  <div id="calculator">
+    <div id="displays">
+      <input type="text" id="operation"/>
+      <input type="text" id="result" disabled/>
+    </div>
+    <div id="controls">
+      <div id="numbers">
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="number">0</button>
+      </div>
+      <div id="operators">
+        <button class="operator">+</button>
+        <button class="operator">-</button>
+        <button class="operator">/</button>
+        <button class="operator">*</button>
+        <button class="clear">C</button>
+      </div>
+    </div>
+  </div>
+  </section>
+</section>
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+body, html{
+  background-color : #ddd;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+button{
+  background-color: #fff;
+  border : 0;
+  border-bottom: 1px solid #fff;
+  color: #575865;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  font-family: Open Sans,sans-serif;
+  font-weight: 600;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.06);
+  padding : 10px 20px;
+  margin-bottom : 4px;
+}
+
+#calculator{
+  display : inline-block;
+  text-align: center;
+  background-color : #161a36;
+  padding : 20px;
+  border-radius: 8px;
+}
+
+#displays{
+  width : 350px;
+}
+
+input{
+  width : 100%;
+  font-size: 28px;
+  color : #333;
+  margin-bottom : 8px;
+  text-align: right;
+  background-color : #f9f9fb;
+}
+
+input#result{
+  color : #fff;
+  background-color: #333;
+}
+button.number{
+    width : 32%;
+    height: 60px;
+}
+
+#numbers, #operators{
+  display: inline-block;
+}
+#numbers{
+  width : 300px;
+  float : left;
+}
+
+button.operator, button.clear{
+  width : 100%;
+  background-color: #ef3257;
+  color : #fff;
+}
+
+#operators{
+  width : 50px;
+}
+
+body, html{
+  background-color : #161a36;
+  color : #fff;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+canvas{
+  display: none;
+}
+#container{
+  margin: auto;
+  left : 0;
+  right : 0;
+  position:relative;
+  display: inline-block;
+}
+#qr{
+  transition : filter 0.3s;
+}
+
+#qr:hover{
+  filter : blur(5px);
+}
+
+#container:hover label{
+  opacity: 1;
+}
+#container label{
+  position: absolute;
+  color: black;
+  margin: auto;
+  width: 100%;
+  top: 45%;
+  font-size: 26px;
+  z-index : 1;
+  opacity : 0;
+  transition : opacity 0.3s;
+  pointer-events: none;
+  left: 0;
+}
+input{
+  border : 1px solid #000;
+  border-radius: 8px;
+  padding : 2px 8px;
+}
+input#url{
+  width : 100%;
+  max-width : 300px;
+  height : 40px;
+}
+input#generate{
+  height : 46px;
+  font-weight: bold;
+}
+.has-error #url{
+  border-color : red;
+}
+.has-error .error{
+  display : block;
+}
+.error{
+  display : none;
+  color : #f00;
+}
+#rules{
+  text-align: left;
+}
+a{
+  text-decoration: none;
+  color : #ef3257;
+}
+a:hover{
+  border-bottom : solid #ef3257 1px;
+}
+
+#wrapper{
+  width : 100%;
+  max-width : 600px;
+  margin : auto;
+  left : 0;
+  right : 0;
+  padding-top : 40px;
+}
+header img {
+    width: 30%;
+}
